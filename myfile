@@ -1,0 +1,5 @@
+CREATE TABLE formats (ID integer primary key autoincrement, Name varchar(30), checksum varchar(64), Length smallint);
+CREATE TABLE fieldNames (ID integer primary key autoincrement, formatID
+integer, fieldName varchar(50), PII smallint, summary_method varchar(20))
+FOREIGN KEY(formatID) references formats(ID);
+CREATE TABLE fieldMaps(ID integer primary key autoincrement, formatID ineger, fieldID integer, ordinal integer);
