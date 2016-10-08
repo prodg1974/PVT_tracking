@@ -1,6 +1,6 @@
-import fileIO
+import polling 
 #So Far So Good
-header=fileIO.readHeader('./test.txt')
-hash=fileIO.checksum(header)
+header==polling.getHeader('./test.txt')
+hash=polling.checksum(header)
 print hash
 

@@ -1,15 +1,19 @@
-import pandas as pd
-import sys
+"""Functions for finding documents from configuration database
+"""
+#import pandas as pd
 import sqlite3
 import hashlib
-def getHeader(fname):
+import sys
+
+
+def getheader(fname):
     """ returns the first line of filename
-    Args:
+   Args:
          A valid path to a file
     """
-    with open(fname,'r') as f:
-        header=f.readline()
-        f.close
+    with open(fname, 'r') as myfile:
+        header = myfile.readline()
+        #myfile.close
         return header
 
 
