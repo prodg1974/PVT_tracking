@@ -21,3 +21,7 @@ The Scrubbing Manager is a superset of the Validation Manager. It would be able 
 The Communication Manager would be responsible for compiling and disseminating messages from the various services.  It would require extensive user interaction in order to match the incoming information and make decisions on whether the information is merely logging status or requires actual notification.  The notification manager should understand how to send email.  It should also support interfacing with SFDC in order to create a record for  follow up work and conversation by Preventure staff.
 
 ##Task List
+.User interface. Research python user setup
+.Create DB in SQLITE
+.Investigate SQL-Server connection
+
