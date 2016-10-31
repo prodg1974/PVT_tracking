@@ -1,0 +1,1 @@
+select f1.fieldname, f2.fieldname from fields f1, fields f2, fieldMaps where fieldMaps.from_FieldID = f1.id and fieldMaps.to_FieldID = f2.id;
