@@ -11,8 +11,8 @@ def getheader(fname):
    Args:
          A valid path to a file
     """
-    with open(fname, 'r') as myfile:
-        header = myfile.readline()
+    with open(fname, 'r',encoding='utf-8') as myfile:
+        header = myfile.readline().encode('utf-8')
         #myfile.close
         return header
 
